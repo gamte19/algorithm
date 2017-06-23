@@ -1,12 +1,12 @@
 package data_structure;
 
-public class StackElement <T>{
+public class StackElement <T> {
     private Object data;
     private StackElement prev;
     private StackElement next;
 
 
-    public StackElement(Object data) {
+    public StackElement(T data) {
         this.data = data;
     }
 
@@ -31,5 +31,12 @@ public class StackElement <T>{
         this.next = next;
     }
 
-
+    @Override
+    public String toString() {
+        return "StackElement{" +
+                "data=" + data +
+                ", prev=" + prev +
+                ", next=" + next +
+                '}';
+    }
 }
